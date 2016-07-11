@@ -1,0 +1,49 @@
+package MetaGraphics_D;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $560000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Meta Graphics'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  GR32_R;
+
+contains
+  MgBase in '..\..\Source\MgBase.pas',
+  MgShapes in '..\..\Source\MgShapes.pas',
+  MgPrimitives in '..\..\Source\MgPrimitives.pas',
+  MgCanvas in '..\..\Source\MgCanvas.pas',
+  MgReg in '..\..\Source\MgReg.pas',
+  MgScene in '..\..\Source\MgScene.pas',
+  MgBackend in '..\..\Source\MgBackend.pas',
+  MgBackendGDI in '..\..\Source\MgBackendGDI.pas',
+  MgBackendGR32 in '..\..\Source\MgBackendGR32.pas',
+  MgBackendAgg in '..\..\Source\MgBackendAgg.pas',
+  MgBackendOpenGL in '..\..\Source\MgBackendOpenGL.pas';
+
+end.
